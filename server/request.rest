@@ -1,0 +1,86 @@
+###
+GET http://localhost:5000/categories/get/
+Content-Type: application/json
+
+{
+    "nama":"Makanan"
+}
+
+
+
+###
+GET http://localhost:3000/user/register/
+
+
+###
+GET http://localhost:5000/user/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MmEwNjc2MmZlMTZjMGI5NGZmMDg1OTUiLCJ1c2VybmFtZSI6IkFvem9yYSIsImlhdCI6MTY1NDg2NjA1OCwiZXhwIjoxNjU0ODY2MDczfQ.BKKttHKRPZI4m5gw_fcbZhFy4Mz8F9yfQQAss0gW9X4
+###
+GET http://localhost:3000/user/token
+###
+DELETE http://localhost:3000/user/logout
+###
+POST http://localhost:5000/user/register
+Content-Type: application/json
+
+{
+    "username": "Aozora",
+    "password": "huhah",
+    "confirmPassword": "huhah"
+}
+### 
+POST http://localhost:3000/user/register
+Content-Type: application/json
+
+{
+    "username":"fjid",
+    "password": "huhah",
+    "conffirmPassword": "huhah"
+
+}
+
+###
+POST http://localhost:5000/user/login
+Content-Type: application/json
+
+{
+    "username": "Aozora",
+    "password": "huhah"
+}
+
+
+
+
+
+
+###
+GET http://localhost:3000/products/category
+Content-Type: application/json
+
+{
+    "nama":"Makanan"
+}
+
+###
+POST http://localhost:5000/cart/
+Content-Type: application/json
+
+{
+    "nama_pelanggan":"Aozora",
+    "jumlah":1,
+    "produk":"kgg",
+    "total_harga":132
+}
+
+###
+GET  http://localhost:5000/cart/629d7d1b454ee26df9525d5f
+
+###
+GET    http://localhost:5000/cart/
+
+###
+DELETE http://localhost:5000/cart/Aozora
+
+
+###
+POST http://localhost:5000/customer
