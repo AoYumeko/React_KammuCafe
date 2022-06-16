@@ -4,7 +4,6 @@ import Cart from "../models/CartModel.js";
 export const insertCart = async (req, res) => {
     try {
         const { nama_pelanggan, jumlah, produk, total_harga } = req.body;
-        await console.log(no_meja);
         await Cart.create({
             nama_pelanggan: nama_pelanggan,
             jumlah: jumlah,

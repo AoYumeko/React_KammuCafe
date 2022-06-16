@@ -19,7 +19,7 @@ const origin = process.env.ORIGIN;
 db.once("open", () => console.log("Database Successfully Connect"));
 
 // Middleware
-app.use(cors({ credentials: true, origin: origin }));
+app.use(cors({ credentials: true, origin: "http://34.128.125.148" }));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static("public"));
